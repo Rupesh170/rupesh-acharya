@@ -40,10 +40,15 @@ const featuredProjects = [
 ];
 
 const services = [
-  { icon: 'map', title: '2D Mapping', desc: 'High-accuracy topographic and planimetric maps' },
-  { icon: 'ai-3d-object', title: '3D Digital Replicas', desc: 'Photorealistic 3D models from survey data' },
-  { icon: 'globe', title: 'Digital Twins', desc: 'Real-time linked virtual replicas of physical assets' },
-  { icon: 'document', title: 'CAD Deliverables', desc: 'Production-ready drawings for engineering teams' },
+  { icon: 'ai-3d-object', title: 'Geospatial 3D Modeling', desc: 'Photorealistic 3D models from LiDAR, drone photogrammetry, and geospatial data' },
+  { icon: 'globe', title: 'Digital Twin Creation', desc: 'Real-time linked 3D models connected to GIS database and operational systems' },
+  { icon: 'document', title: 'CAD Deliverables', desc: 'Production-quality AutoCAD and Civil 3D drawings from survey data' },
+  { icon: 'chart', title: 'High Resolution Satellite Imagery Service', desc: 'Order high resolution satellite imagery for your projects and research needs.' },
+];
+
+const videos = [
+  { id: 0, title: 'Geospatial 3D Modeling Sample 1', src: '/3D_1.mp4', poster: '/3D_1_1.PNG' },
+  { id: 1, title: 'Geospatial 3D Modeling Sample 2', src: '/3D_2.mp4', poster: '/3D_4_1.PNG' },
 ];
 
 const stats = [
@@ -54,6 +59,7 @@ const stats = [
 export default function Home() {
   const [currentPoster, setCurrentPoster] = useState(0);
   const [fadingIn, setFadingIn] = useState(true);
+  const [playingVideo, setPlayingVideo] = useState<number | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -295,29 +301,43 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-fluid-md">
-            {videoPosters.slice(0, 2).map((poster, i) => (
+            {videos.map((video) => (
               <div
-                key={i}
+                key={video.id}
                 className="relative overflow-hidden rounded-lg"
                 style={{ aspectRatio: '16/9', boxShadow: '0px 8px 40px rgba(0,0,0,0.16)' }}
               >
-                <img
-                  src={poster}
-                  alt={`Geospatial work sample ${i + 1}`}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-                <div
-                  className="absolute inset-0 flex items-center justify-center"
-                  style={{ background: 'rgba(0,0,0,0.3)' }}
-                >
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center"
-                    style={{ backgroundColor: '#d5001c' }}
-                  >
-                    <PIcon name="play" size="large" theme="dark" aria-hidden="true" />
-                  </div>
-                </div>
+                {playingVideo === video.id ? (
+                  <video
+                    src={video.src}
+                    controls
+                    autoPlay
+                    className="w-full h-full object-cover"
+                    onEnded={() => setPlayingVideo(null)}
+                  />
+                ) : (
+                  <>
+                    <img
+                      src={video.poster}
+                      alt={video.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <button
+                      onClick={() => setPlayingVideo(video.id)}
+                      className="absolute inset-0 flex items-center justify-center cursor-pointer hover:opacity-90 transition-opacity"
+                      style={{ background: 'rgba(0,0,0,0.3)' }}
+                      aria-label={`Play ${video.title}`}
+                    >
+                      <div
+                        className="w-16 h-16 rounded-full flex items-center justify-center"
+                        style={{ backgroundColor: '#d5001c' }}
+                      >
+                        <PIcon name="play" size="large" theme="dark" aria-hidden="true" />
+                      </div>
+                    </button>
+                  </>
+                )}
               </div>
             ))}
           </div>

@@ -47,7 +47,7 @@ export default function About() {
             <div>
               <PHeading size="x-large" tag="h2" className="mb-fluid-md">Who I Am</PHeading>
               <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
-                I'm a Geospatial Engineer specializing in converting real-world environments into accurate, actionable digital assets. With deep expertise spanning LiDAR, photogrammetry, GIS analysis, BIM Modeling and CAD production, I deliver precision that is never compromised.
+                I'm Rupesh Acharya, a Geospatial Engineer specializing in converting real-world environments into accurate, actionable digital assets. With deep expertise spanning LiDAR, photogrammetry, GIS analysis, BIM Modeling and CAD production, I deliver precision that is never compromised.
               </PText>
               <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
                 My work sits at the intersection of GIS, 3D Modeling, and Digital Twins. I don't just process the data — I engineer workflows that transform raw measurements into models, maps, designs, and digital twins that last.

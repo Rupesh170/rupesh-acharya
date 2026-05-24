@@ -3,30 +3,23 @@ import { PButton, PDisplay, PHeading, PText, PDivider, PIcon } from '@porsche-de
 
 const services = [
   {
-    icon: 'map',
-    title: '2D Mapping',
-    description: 'High-accuracy topographic maps, planimetric plans, and cadastral surveys for engineering, planning, and land management.',
-    clients: 'Municipalities, civil engineers, land developers, surveyors',
-    deliverables: ['Topographic maps (1:500 to 1:10,000)', 'Planimetric feature layers', 'Contour plans', 'GIS-ready datasets', 'PDF and DWG plans'],
-  },
-  {
     icon: 'ai-3d-object',
-    title: '3D Digital Replicas',
-    description: 'Photorealistic and geometrically accurate 3D models produced from LiDAR scanning, drone photogrammetry, or structured-light scanning.',
-    clients: 'Architects, BIM teams, heritage preservation, infrastructure managers',
-    deliverables: ['Textured mesh models', 'Point cloud (LAS/LAZ)', 'Surface models (DTM/DSM)', 'LoD1–LoD3 building models', 'OBJ, FBX, IFC formats'],
+    title: 'Geospatial 3D Modeling',
+    description: 'Photorealistic and geometrically accurate 3D models produced from LiDAR scanning, drone photogrammetry, or open sourced geospatial dataset.',
+    clients: 'Architects, BIM teams, heritage preservation, infrastructure managers, game developers',
+    deliverables: ['Textured mesh models', 'Point cloud (LAS/LAZ)', 'Surface models (DTM/DSM)', 'Gaussian Splats', 'OBJ, FBX, IFC formats'],
   },
   {
     icon: 'globe',
     title: 'Digital Twin Creation',
-    description: 'End-to-end creation of living Digital Twins — 3D geometric models linked to real-time sensor data and operational systems.',
+    description: 'End-to-end creation of pre-build and living Digital Twins — 3D geometric models linked to real-time GIS database and operational systems.',
     clients: 'Smart cities, infrastructure operators, facility managers, utilities',
-    deliverables: ['CityGML / IFC models', 'Cesium 3D Tiles', 'IoT sensor integration', 'Twin management dashboard', 'API data connectors'],
+    deliverables: ['CityGML / IFC models', 'Cesium 3D Tiles', 'Unreal Engine Application', 'Twin management dashboard', 'Digital Twin Architectural Walkthrough'],
   },
   {
     icon: 'document',
     title: 'CAD Deliverables',
-    description: 'Production-quality AutoCAD and Civil 3D drawings from survey data, including automated pipelines for high-volume projects.',
+    description: 'Production-quality AutoCAD and Civil 3D drawings from LiDAR and Photogrammetry survey data, including drone reality capture processing with GNSS.',
     clients: 'Construction firms, civil engineers, road designers, drainage engineers',
     deliverables: ['AutoCAD DWG drawings', 'Civil 3D surface models', 'PDF plan sets', 'Feature coding libraries', 'Automated QA reports'],
   },
@@ -38,11 +31,18 @@ const services = [
     deliverables: ['Analysis maps and reports', 'Geodatabase design', 'Spatial model documentation', 'Interactive web maps', 'Automation scripts'],
   },
   {
-    icon: 'compass',
-    title: 'Field Survey Services',
-    description: 'Ground control surveying, site traverses, detail surveys, and GNSS campaigns supporting larger photogrammetric or modeling projects.',
-    clients: 'Drone operators, remote sensing teams, engineering firms',
-    deliverables: ['GCP coordinate files', 'GNSS observation reports', 'Control network adjustment reports', 'Traverse files', 'Accuracy certificates'],
+    icon: 'cube',
+    title: 'BIM Modeling',
+    description: 'Contextual BIM modeling, integration with existing geodatabase, digital twin BIM simulation',
+    clients: 'Architects, BIM teams, Construction firms, urban planners',
+    deliverables: ['Revit or IFC Files', 'Clash reports', 'Model Simulations', 'Unreal Engine Application', 'Cesium 3D Tiles'],
+  },
+  {
+    icon: 'map',
+    title: 'High Resolution Satellite Imagery Service',
+    description: 'Order high resolution satellite imagery for your projects and research needs.',
+    clients: 'Governmental Agencies, Geospatial Companies, Researchers, Urban Planners',
+    deliverables: ['50 cm or 30 cm resolution', 'Multispectral (4 bands)', 'Orthorectified', 'AI feature detection recommended', 'Atmospherically correct'],
   },
 ];
 
