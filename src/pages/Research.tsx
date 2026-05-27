@@ -2,45 +2,13 @@ import { Link } from 'react-router-dom';
 import { PButton, PDisplay, PHeading, PText, PDivider, PTag, PIcon } from '@porsche-design-system/components-react';
 
 const research = [
-  {
-    type: 'Ongoing',
-    title: 'Autonomous LiDAR-to-CityGML Reconstruction',
-    description: 'Investigating deep learning approaches for automated semantic segmentation and reconstruction of urban point clouds into Level-of-Detail 2 CityGML models without manual intervention.',
-    topics: ['LiDAR', 'Deep Learning', 'CityGML', 'Semantic Segmentation'],
-    status: 'In Progress',
-    year: '2024–Present',
-  },
-  {
-    type: 'Technical Note',
-    title: 'Accuracy Assessment Framework for UAV Photogrammetry',
-    description: 'A systematic methodology for evaluating the positional accuracy of drone-derived digital surface models using independent check points and RMSE analysis across terrain complexity classes.',
-    topics: ['UAV', 'Photogrammetry', 'Accuracy', 'QA/QC'],
-    status: 'Published',
-    year: '2023',
-  },
-  {
-    type: 'Experiment',
-    title: 'RTK vs. PPK: Field Accuracy Comparison',
-    description: 'Field comparison of Real-Time Kinematic versus Post-Processed Kinematic GNSS methods for ground control point determination in areas with variable cellular network coverage.',
-    topics: ['GNSS', 'RTK', 'PPK', 'Geodesy'],
-    status: 'Complete',
-    year: '2023',
-  },
-  {
-    type: 'Methods Note',
-    title: 'Integrating IoT Sensor Streams into CityGML Digital Twins',
-    description: 'Documentation of a lightweight ADE (Application Domain Extension) schema for attaching real-time sensor observations to CityGML building and infrastructure objects.',
-    topics: ['Digital Twin', 'CityGML', 'IoT', 'ADE'],
-    status: 'Draft',
-    year: '2024',
-  },
-  {
-    type: 'Exploration',
-    title: 'Point Cloud Compression for Web Streaming',
-    description: 'Evaluating Potree, Cesium 3D Tiles, and LASzip compression performance for streaming classified urban LiDAR datasets to browser clients at interactive frame rates.',
-    topics: ['Point Cloud', 'WebGL', 'Cesium', 'Compression'],
-    status: 'In Progress',
-    year: '2024',
+   {
+    type: 'Systematic Review',
+    title: 'UAV-GNSS Integrated Workflow for Mountain Road Design in Data-Scarce Developing Regions',
+    description: 'A comprehensive systematic review and conceptual framework integrating UAV photogrammetry, RTK/PPK GNSS, and Structure-from-Motion processing into a complete pipeline for mountain road design, alignment optimization, earthwork quantification, and construction set-out in resource-constrained environments. Synthesizes accuracy benchmarks, cost implications, and operational constraints across data acquisition, digital terrain modelling, design integration, and as-built validation stages.',
+    topics: ['UAV Photogrammetry', 'GNSS/RTK', 'Structure-from-Motion', 'Digital Terrain Models', 'Road Design', 'Earthwork Optimization', 'Mountain Engineering', 'Data-Scarce Regions'],
+    status: 'In Review',
+    year: '2026',
   },
 ];
 
@@ -50,7 +18,7 @@ const topics = [
   { icon: 'compass', title: 'Survey Instrumentation', desc: 'Comparing LiDAR platforms, GNSS receivers, and their error propagation characteristics.' },
   { icon: 'chart', title: 'Spatial Data Science', desc: 'Statistical methods for geospatial analysis, interpolation, and uncertainty quantification.' },
 ];
-
+ 
 export default function Research() {
   return (
     <div>
@@ -70,7 +38,7 @@ export default function Research() {
           </PText>
         </div>
       </section>
-
+ 
       {/* Research Interests */}
       <section className="py-fluid-2xl bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
@@ -84,11 +52,11 @@ export default function Research() {
               </div>
             ))}
           </div>
-
+ 
           <PDivider />
         </div>
       </section>
-
+ 
       {/* Research Items */}
       <section className="py-fluid-2xl bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
@@ -120,10 +88,10 @@ export default function Research() {
                   </div>
                   <PText size="x-small" color="contrast-medium" tag="span">{item.year}</PText>
                 </div>
-
+ 
                 <PHeading size="medium" tag="h3" className="mb-fluid-sm">{item.title}</PHeading>
                 <PText size="small" color="contrast-medium" tag="p" className="mb-fluid-md">{item.description}</PText>
-
+ 
                 <div className="flex flex-wrap gap-static-xs">
                   {item.topics.map((topic) => (
                     <span
@@ -140,7 +108,7 @@ export default function Research() {
           </div>
         </div>
       </section>
-
+ 
       {/* Collaboration */}
       <section className="py-fluid-2xl" style={{ backgroundColor: '#d5001c' }}>
         <div className="max-w-[1440px] mx-auto px-fluid-md text-center">
@@ -159,3 +127,4 @@ export default function Research() {
     </div>
   );
 }
+ 

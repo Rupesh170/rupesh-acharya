@@ -106,20 +106,20 @@ export default function ProjectDetail1() {
       </section>
 
       {/* Content */}
-      <section className="py-fluid-2xl bg-canvas">
+      <section className="py-fluid-lg bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-lg">
             <div className="lg:col-span-2">
-              <PHeading size="x-large" tag="h2" className="mb-fluid-md">Project Overview</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="x-large" tag="h1" className="mb-fluid-sm">Project Overview</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 This project demonstrates the powerful fusion of highway interchange engineering with real-time geographic data, creating a highly immersive 3D presentation. By taking conceptual roadway designs and geolocating them accurately within an authentic digital landscape—complete with detailed daytime and nighttime lighting, vehicle movement, and realistic surrounding vegetation—this work shows how a static infrastructure design evolves into a living Infrastructure Digital Twin.
               </PText>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 When dealing with large-scale linear assets like highways, overpasses, and grade-separated interchanges, isolating the design within traditional CAD software creates a massive blind spot. Merging Building Information Modeling (BIM) with Geographic Information Systems (GIS) solves this challenge, providing a comprehensive design-to-build pipeline that is essential for modern civil engineering.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">The Critical Importance of a BIM+GIS Roadway Design Approach</PHeading>
-              <div className="flex flex-col gap-fluid-md mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">The Critical Importance of a BIM+GIS Roadway Design Approach</PHeading>
+              <div className="flex flex-col gap-fluid-md mb-fluid-md">
                 {[
                   { 
                     n: '1', 
@@ -172,3 +172,8 @@ export default function ProjectDetail1() {
     </div>
   );
 }
+
+
+
+
+

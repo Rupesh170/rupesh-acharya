@@ -2,17 +2,17 @@ import { useState } from 'react';
 import { PDisplay, PText, PIcon } from '@porsche-design-system/components-react';
 
 const galleryItems = [
-  { id: 1, src: '/project-digital-twin.webp', title: 'Urban Digital Twin Model', category: 'Digital Twin', size: 'large' },
-  { id: 2, src: '/project-terrain.webp', title: '3D Terrain — 200ha Mine Site', category: '3D Model', size: 'small' },
-  { id: 3, src: '/project-cad.webp', title: 'Survey-to-CAD Blueprint', category: 'CAD', size: 'small' },
-  { id: 4, src: '/gallery-comparison.webp', title: 'Reality vs. Digital Twin', category: 'Digital Twin', size: 'large' },
-  { id: 5, src: '/gallery-lidar.webp', title: 'LiDAR Point Cloud — Forest Survey', category: 'LiDAR', size: 'large' },
-  { id: 6, src: '/gallery-map.webp', title: 'Topographic Map — Highland Region', category: 'Mapping', size: 'small' },
-  { id: 7, src: '/about-engineer.webp', title: 'Total Station Field Survey', category: 'Field Work', size: 'small' },
-  { id: 8, src: '/hero-geospatial.webp', title: 'LiDAR + Aerial Composite', category: 'LiDAR', size: 'large' },
+  { id: 1, src: '/Gallery4.png', title: 'Georeferenced BIM', category: 'Digital Twin', size: 'large' },
+  { id: 2, src: '/Gallery2.PNG', title: '3D Print Terrain Model', category: '3D Model', size: 'small' },
+  { id: 3, src: '/Gallery3.png', title: '3dsMax + Twinmotion', category: '3D Model', size: 'small' },
+  { id: 4, src: '/Gallery5.png', title: 'Digital Twin Visualization', category: 'Digital Twin', size: 'large' },
+  { id: 5, src: '/3D_4_1.PNG', title: 'LiDAR to 3D Model', category: 'LiDAR', size: 'large' },
+  { id: 6, src: '/Gallery1 (5).PNG', title: 'LiDAR to DTM', category: 'LiDAR', size: 'small' },
+  { id: 7, src: '/Gallery1.JPG', title: '3D City Model', category: '3D Model', size: 'small' },
+  { id: 8, src: '/3D_4_5.gif', title: 'Real Life Model and Unreal Engine Model ', category: 'LiDAR', size: 'large' },
 ];
 
-const filters = ['All', 'Digital Twin', '3D Model', 'CAD', 'LiDAR', 'Mapping', 'Field Work'];
+const filters = ['All', 'Digital Twin', '3D Model', 'CAD', 'LiDAR', 'Mapping'];
 
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState('All');

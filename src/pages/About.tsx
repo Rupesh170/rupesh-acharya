@@ -27,7 +27,7 @@ export default function About() {
       >
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(/about-engineer.webp)' }}
+          style={{ backgroundImage: 'url(/.jpg)' }}
         />
         <div className="relative z-10 max-w-[1440px] mx-auto px-fluid-md">
           <div className="flex items-center gap-static-sm mb-fluid-md">
@@ -63,7 +63,7 @@ export default function About() {
             </div>
             <div className="rounded-lg overflow-hidden" style={{ boxShadow: '0px 8px 40px rgba(0,0,0,0.16)' }}>
               <img
-                src="/about-engineer.webp"
+                src="/unnamed.jpg"
                 alt="Geospatial engineer in the field"
                 className="w-full h-full object-cover"
                 style={{ maxHeight: 480 }}

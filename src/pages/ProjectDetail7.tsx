@@ -77,20 +77,20 @@ export default function ProjectDetail7() {
       </section>
 
       {/* Content */}
-      <section className="py-fluid-2xl bg-canvas">
+      <section className="py-fluid-lg bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-lg">
             <div className="lg:col-span-2">
-              <PHeading size="x-large" tag="h2" className="mb-fluid-md">Project Overview</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="x-large" tag="h1" className="mb-fluid-sm">Project Overview</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 This project demonstrates a highly integrated workflow that bridges the gap between detailed architectural design and macro-scale geographic environments. By embedding a fully realized, multi-story corporate building model—complete with comprehensive interior spatial design, multi-tiered structural stairwells, and complex atrium glazing—directly into a surrounding 3D city grid, this work showcases the powerful convergence of Building Information Modeling (BIM) and Geographic Information Systems (GIS).
               </PText>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 While BIM traditionally isolates a structure within its own local coordinate system, contextualizing it within a wider georeferenced 3D city model transforms it into an intelligent asset. This synergy is fundamentally reshaping the lifecycle management of modern infrastructure.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">The Critical Importance of Georeferenced BIM</PHeading>
-              <div className="flex flex-col gap-fluid-md mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">The Critical Importance of Georeferenced BIM</PHeading>
+              <div className="flex flex-col gap-fluid-md mb-fluid-md">
                 {[
                   { n: '1', title: 'Dynamic Data Convergence', desc: 'Instead of viewing a building as an isolated static entity, it becomes an interactive cell within the city\'s living network. It allows municipalities to sync real-time IoT sensor telemetry (such as HVAC performance, energy consumption, and structural health) with macro-scale geographic dashboards.' },
                   { n: '2', title: 'Asset Management', desc: 'Facility managers and municipal authorities can seamlessly transition from a bird\'s-eye view of an entire city district down to a specific internal utility room or structural beam, optimizing maintenance workflows across thousands of assets.' },
@@ -126,3 +126,8 @@ export default function ProjectDetail7() {
     </div>
   );
 }
+
+
+
+
+

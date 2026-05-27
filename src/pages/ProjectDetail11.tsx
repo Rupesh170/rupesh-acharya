@@ -74,20 +74,20 @@ export default function ProjectDetail11() {
       </section>
 
       {/* Content */}
-      <section className="py-fluid-2xl bg-canvas">
+      <section className="py-fluid-lg bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-lg">
             <div className="lg:col-span-2">
-              <PHeading size="x-large" tag="h2" className="mb-fluid-md">Project Overview</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="x-large" tag="h1" className="mb-fluid-sm">Project Overview</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 Moving from traditional flat 2D maps to City-Scale 3D GIS Modeling is a massive leap forward. For a rapidly growing city with a delicate environmental and geological footprint like Pokhara, having a data-rich 3D spatial framework is absolutely critical for sustainable planning, safety, and infrastructure development.
               </PText>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 This comprehensive 3D city model of Pokhara integrates geospatial data, urban topography, and building information to create a powerful planning and visualization tool that serves multiple stakeholder needs—from municipal administration to tourism and investment.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">The Critical Importance of 3D GIS Modeling</PHeading>
-              <div className="flex flex-col gap-fluid-md mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">The Critical Importance of 3D GIS Modeling</PHeading>
+              <div className="flex flex-col gap-fluid-md mb-fluid-md">
                 {[
                   { 
                     n: '1', 
@@ -145,3 +145,8 @@ export default function ProjectDetail11() {
     </div>
   );
 }
+
+
+
+
+

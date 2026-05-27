@@ -73,20 +73,20 @@ export default function ProjectDetail10() {
       </section>
 
       {/* Content */}
-      <section className="py-fluid-2xl bg-canvas">
+      <section className="py-fluid-lg bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-lg">
             <div className="lg:col-span-2">
-              <PHeading size="x-large" tag="h2" className="mb-fluid-md">Project Overview</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="x-large" tag="h1" className="mb-fluid-sm">Project Overview</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 This project showcases a high-fidelity 3D model and rendering of a modern commercial warehouse facility. The visual assets demonstrate a comprehensive design layout, detailing structural steel framing, modular insulated wall panels, integrated administrative office blocks, and precise peripheral site grading for heavy vehicle logistics.
               </PText>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 While traditional 3D modeling focuses heavily on superficial surface aesthetics and visual approximations, Building Information Modeling (BIM) introduces an entirely different paradigm. It embeds intelligent, object-oriented data into every aspect of the geometry. For modern architecture and engineering, the transition from legacy CAD or basic 3D mesh modeling to a data-driven BIM ecosystem is a fundamental shift from "drawing shapes" to "building database-backed structures."
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">The Technical Importance of BIM Over Traditional Modeling</PHeading>
-              <div className="flex flex-col gap-fluid-md mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">The Technical Importance of BIM Over Traditional Modeling</PHeading>
+              <div className="flex flex-col gap-fluid-md mb-fluid-md">
                 {[
                   { 
                     n: '1', 
@@ -139,3 +139,8 @@ export default function ProjectDetail10() {
     </div>
   );
 }
+
+
+
+
+

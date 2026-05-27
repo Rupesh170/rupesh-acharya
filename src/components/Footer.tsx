@@ -45,14 +45,14 @@ export default function Footer() {
             <PText weight="semi-bold" size="small" tag="p" className="mb-fluid-sm">Connect</PText>
             <div className="flex flex-col gap-static-sm">
               <a
-                href="mailto:geospatial@example.com"
+                href="mailto:rupeshacharya277@gmail.com"
                 className="flex items-center gap-static-xs text-sm text-contrast-medium hover:text-primary no-underline transition-colors"
               >
                 <PIcon name="email" size="small" aria-hidden="true" />
-                geospatial@example.com
+                rupeshacharya277@gmail.com
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/rupesh-acharya11/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-static-xs text-sm text-contrast-medium hover:text-primary no-underline transition-colors"
@@ -61,11 +61,20 @@ export default function Footer() {
                 LinkedIn Profile
               </a>
               <a
-                href="tel:+1234567890"
+                href="https://www.fiverr.com/s/3879l7m"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-static-xs text-sm text-contrast-medium hover:text-primary no-underline transition-colors"
+              >
+                <PIcon size="small" aria-hidden="true" />
+                Fiverr - Freelance Services
+              </a>
+              <a
+                href="tel:+9779816637599"
                 className="flex items-center gap-static-xs text-sm text-contrast-medium hover:text-primary no-underline transition-colors"
               >
                 <PIcon name="phone" size="small" aria-hidden="true" />
-                +1 (234) 567-890
+                +977 981-6637599
               </a>
             </div>
           </div>

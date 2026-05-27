@@ -9,6 +9,7 @@ const projectTypes = [
   'GIS Analysis',
   'Field Survey',
   'Research Collaboration',
+  'Satellite Imagery',
   'Other',
 ];
 
@@ -58,10 +59,11 @@ export default function Contact() {
 
               <div className="flex flex-col gap-fluid-lg mb-fluid-xl">
                 {[
-                  { icon: 'email', label: 'Email', value: 'geospatial@example.com', href: 'mailto:geospatial@example.com' },
-                  { icon: 'phone', label: 'Phone', value: '+1 (234) 567-890', href: 'tel:+1234567890' },
-                  { icon: 'logo-linkedin', label: 'LinkedIn', value: 'linkedin.com/in/geoengineer', href: 'https://linkedin.com' },
+                  { icon: 'email', label: 'Email', value: 'rupeshacharya277@gmail.com', href: 'mailto:rupeshacharya277@gmail.com' },
+                  { icon: 'phone', label: 'Phone', value: '+977 981-6637599', href: 'tel:+9779816637599' },
+                  { icon: 'logo-linkedin', label: 'LinkedIn', value: 'linkedin.com/in/rupesh-acharya11/', href: 'https://www.linkedin.com/in/rupesh-acharya11/' },
                   { icon: 'geo-localization', label: 'Location', value: 'Available Worldwide · Remote & On-site', href: null },
+                  { icon: 'briefcase', label: 'Fiverr', value: 'Available for freelance projects', href: 'https://www.fiverr.com/s/3879l7m' },
                 ].map(({ icon, label, value, href }) => (
                   <div key={label} className="flex items-start gap-fluid-sm">
                     <div
@@ -89,7 +91,7 @@ export default function Contact() {
                 ))}
               </div>
 
-              <PDivider className="mb-fluid-xl" />
+             
 
               <PHeading size="medium" tag="h3" className="mb-fluid-md">Response Times</PHeading>
               <div className="flex flex-col gap-static-sm">
@@ -122,123 +124,138 @@ export default function Contact() {
                   </PText>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-fluid-md">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-fluid-md">
-                    <div className="flex flex-col gap-static-xs">
-                      <label htmlFor="name" className="text-sm font-medium text-primary">
-                        Full Name <span style={{ color: '#d5001c' }}>*</span>
-                      </label>
-                      <input
-                        id="name"
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="px-3 py-2 rounded border border-contrast-low bg-canvas text-sm focus:outline-none"
-                        style={{ borderColor: '#D8D8DB' }}
-                        placeholder="Your name"
-                      />
+                <>
+                  <form onSubmit={handleSubmit} className="flex flex-col gap-fluid-md">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-fluid-md">
+                      <div className="flex flex-col gap-static-xs">
+                        <label htmlFor="name" className="text-sm font-medium text-primary">
+                          Full Name <span style={{ color: '#d5001c' }}>*</span>
+                        </label>
+                        <input
+                          id="name"
+                          type="text"
+                          required
+                          value={formData.name}
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                          className="px-3 py-2 rounded border border-contrast-low bg-canvas text-sm focus:outline-none"
+                          style={{ borderColor: '#D8D8DB' }}
+                          placeholder="Your name"
+                        />
+                      </div>
+                      <div className="flex flex-col gap-static-xs">
+                        <label htmlFor="email" className="text-sm font-medium text-primary">
+                          Email Address <span style={{ color: '#d5001c' }}>*</span>
+                        </label>
+                        <input
+                          id="email"
+                          type="email"
+                          required
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          className="px-3 py-2 rounded border bg-canvas text-sm focus:outline-none"
+                          style={{ borderColor: '#D8D8DB' }}
+                          placeholder="your@email.com"
+                        />
+                      </div>
                     </div>
-                    <div className="flex flex-col gap-static-xs">
-                      <label htmlFor="email" className="text-sm font-medium text-primary">
-                        Email Address <span style={{ color: '#d5001c' }}>*</span>
-                      </label>
-                      <input
-                        id="email"
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="px-3 py-2 rounded border bg-canvas text-sm focus:outline-none"
-                        style={{ borderColor: '#D8D8DB' }}
-                        placeholder="your@email.com"
-                      />
-                    </div>
-                  </div>
 
-                  <div className="flex flex-col gap-static-xs">
-                    <label htmlFor="projectType" className="text-sm font-medium text-primary">
-                      Project Type <span style={{ color: '#d5001c' }}>*</span>
-                    </label>
-                    <select
-                      id="projectType"
-                      required
-                      value={formData.projectType}
-                      onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                      className="px-3 py-2 rounded border bg-canvas text-sm focus:outline-none appearance-none"
-                      style={{ borderColor: '#D8D8DB' }}
+                    <div className="flex flex-col gap-static-xs">
+                      <label htmlFor="projectType" className="text-sm font-medium text-primary">
+                        Project Type <span style={{ color: '#d5001c' }}>*</span>
+                      </label>
+                      <select
+                        id="projectType"
+                        required
+                        value={formData.projectType}
+                        onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
+                        className="px-3 py-2 rounded border bg-canvas text-sm focus:outline-none appearance-none"
+                        style={{ borderColor: '#D8D8DB' }}
+                      >
+                        <option value="">Select a project type...</option>
+                        {projectTypes.map((t) => (
+                          <option key={t} value={t}>{t}</option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-fluid-md">
+                      <div className="flex flex-col gap-static-xs">
+                        <label htmlFor="budget" className="text-sm font-medium text-primary">
+                          Budget Range <span className="text-xs" style={{ color: '#6B6D70' }}>(optional)</span>
+                        </label>
+                        <select
+                          id="budget"
+                          value={formData.budget}
+                          onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+                          className="px-3 py-2 rounded border bg-canvas text-sm focus:outline-none appearance-none"
+                          style={{ borderColor: '#D8D8DB' }}
+                        >
+                          <option value="">Prefer not to say</option>
+                          <option value="<5k">Under $5,000</option>
+                          <option value="5-15k">$5,000 – $15,000</option>
+                          <option value="15-50k">$15,000 – $50,000</option>
+                          <option value="50k+">$50,000+</option>
+                        </select>
+                      </div>
+                      <div className="flex flex-col gap-static-xs">
+                        <label htmlFor="timeline" className="text-sm font-medium text-primary">
+                          Timeline <span className="text-xs" style={{ color: '#6B6D70' }}>(optional)</span>
+                        </label>
+                        <select
+                          id="timeline"
+                          value={formData.timeline}
+                          onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
+                          className="px-3 py-2 rounded border bg-canvas text-sm focus:outline-none appearance-none"
+                          style={{ borderColor: '#D8D8DB' }}
+                        >
+                          <option value="">Flexible</option>
+                          <option value="asap">ASAP</option>
+                          <option value="1mo">Within 1 month</option>
+                          <option value="3mo">1–3 months</option>
+                          <option value="6mo">3–6 months</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col gap-static-xs">
+                      <label htmlFor="message" className="text-sm font-medium text-primary">
+                        Message <span style={{ color: '#d5001c' }}>*</span>
+                      </label>
+                      <textarea
+                        id="message"
+                        required
+                        rows={6}
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        className="px-3 py-2 rounded border bg-canvas text-sm focus:outline-none resize-y"
+                        style={{ borderColor: '#D8D8DB' }}
+                        placeholder="Describe your project, site, accuracy requirements, and any other relevant details..."
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="flex items-center justify-center gap-static-sm px-fluid-md py-static-md rounded font-medium text-white transition-all"
+                      style={{ backgroundColor: '#d5001c', border: 'none', cursor: 'pointer', fontSize: '0.875rem' }}
                     >
-                      <option value="">Select a project type...</option>
-                      {projectTypes.map((t) => (
-                        <option key={t} value={t}>{t}</option>
-                      ))}
-                    </select>
-                  </div>
+                      <PIcon name="email" size="small" theme="dark" aria-hidden="true" />
+                      Send Message
+                    </button>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-fluid-md">
-                    <div className="flex flex-col gap-static-xs">
-                      <label htmlFor="budget" className="text-sm font-medium text-primary">
-                        Budget Range <span className="text-xs" style={{ color: '#6B6D70' }}>(optional)</span>
-                      </label>
-                      <select
-                        id="budget"
-                        value={formData.budget}
-                        onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                        className="px-3 py-2 rounded border bg-canvas text-sm focus:outline-none appearance-none"
-                        style={{ borderColor: '#D8D8DB' }}
-                      >
-                        <option value="">Prefer not to say</option>
-                        <option value="<5k">Under $5,000</option>
-                        <option value="5-15k">$5,000 – $15,000</option>
-                        <option value="15-50k">$15,000 – $50,000</option>
-                        <option value="50k+">$50,000+</option>
-                      </select>
-                    </div>
-                    <div className="flex flex-col gap-static-xs">
-                      <label htmlFor="timeline" className="text-sm font-medium text-primary">
-                        Timeline <span className="text-xs" style={{ color: '#6B6D70' }}>(optional)</span>
-                      </label>
-                      <select
-                        id="timeline"
-                        value={formData.timeline}
-                        onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
-                        className="px-3 py-2 rounded border bg-canvas text-sm focus:outline-none appearance-none"
-                        style={{ borderColor: '#D8D8DB' }}
-                      >
-                        <option value="">Flexible</option>
-                        <option value="asap">ASAP</option>
-                        <option value="1mo">Within 1 month</option>
-                        <option value="3mo">1–3 months</option>
-                        <option value="6mo">3–6 months</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col gap-static-xs">
-                    <label htmlFor="message" className="text-sm font-medium text-primary">
-                      Message <span style={{ color: '#d5001c' }}>*</span>
-                    </label>
-                    <textarea
-                      id="message"
-                      required
-                      rows={6}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="px-3 py-2 rounded border bg-canvas text-sm focus:outline-none resize-y"
-                      style={{ borderColor: '#D8D8DB' }}
-                      placeholder="Describe your project, site, accuracy requirements, and any other relevant details..."
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="flex items-center justify-center gap-static-sm px-fluid-md py-static-md rounded font-medium text-white transition-all"
-                    style={{ backgroundColor: '#d5001c', border: 'none', cursor: 'pointer', fontSize: '0.875rem' }}
-                  >
-                    <PIcon name="email" size="small" theme="dark" aria-hidden="true" />
-                    Send Message
-                  </button>
-                </form>
+                  
+                  </form>
+                  <br />
+                  <a
+  href="https://www.fiverr.com/s/3879l7m"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center justify-center gap-static-sm px-fluid-md py-static-md rounded font-medium text-white transition-all"
+  style={{ backgroundColor: '#1ea200', border: 'none', cursor: 'pointer', fontSize: '0.875rem', textDecoration: 'none' }} // Removed display: 'block'
+>
+  <PIcon size="small" theme="dark" aria-hidden="true" />
+  <span>Send message in Fiverr</span>
+</a>
+                </>
               )}
             </div>
           </div>

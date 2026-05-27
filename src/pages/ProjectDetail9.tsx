@@ -74,20 +74,20 @@ export default function ProjectDetail9() {
       </section>
 
       {/* Content */}
-      <section className="py-fluid-2xl bg-canvas">
+      <section className="py-fluid-lg bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-lg">
             <div className="lg:col-span-2">
-              <PHeading size="x-large" tag="h2" className="mb-fluid-md">Project Overview</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="x-large" tag="h1" className="mb-fluid-sm">Project Overview</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 This project demonstrates a unified design methodology that places a detailed, multi-tiered Townhall community development model directly within a real-world, georeferenced GIS terrain model. By combining architectural precision with an authentic geographic environment—complete with surrounding vegetation and accurate topography—this project illustrates how a localized public structure interacts with its broader regional footprint.
               </PText>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 While individual CAD designs fail to account for the complexities of surrounding ecosystems and urban fabrics, a formalized BIM + GIS contextual modeling workflow provides a scalable blueprint for modern, resilient civic infrastructure.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">The Technical Importance of the BIM + GIS Integration Workflow</PHeading>
-              <div className="flex flex-col gap-fluid-md mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">The Technical Importance of the BIM + GIS Integration Workflow</PHeading>
+              <div className="flex flex-col gap-fluid-md mb-fluid-md">
                 {[
                   { 
                     n: '1', 
@@ -130,3 +130,8 @@ export default function ProjectDetail9() {
     </div>
   );
 }
+
+
+
+
+

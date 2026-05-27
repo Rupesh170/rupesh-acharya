@@ -105,20 +105,20 @@ export default function ProjectDetail1() {
       </section>
 
       {/* Content */}
-      <section className="py-fluid-2xl bg-canvas">
+      <section className="py-fluid-lg bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-lg">
             <div className="lg:col-span-2">
-              <PHeading size="x-large" tag="h2" className="mb-fluid-md">Project Overview</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="x-large" tag="h2" className="mb-fluid-sm">Project Overview</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 This project showcases an interactive, high-fidelity 3D Digital Twin of the Mount Everest (Sagarmatha) region, developed natively within Unreal Engine. The application transitions static geospatial datasets into a fully dynamic, immersive ecosystem. By featuring an Explore Mode (3D terrain inspector for macro-scale analysis), a Jump In Mode (a human-scale, third-person simulator for ground-level exploration), and a Dynamic Daylight Changing Mode (for real-time solar tracking and shadow propagation), this application bridges the gap between raw spatial data and real-time interactive simulation.
               </PText>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 When high-resolution Digital Elevation Models (DEMs) and realistic textures are deployed inside a real-time physics engine, the resulting 3D Digital Twin evolves far beyond a visual asset. It becomes an authoritative simulation platform with cross-disciplinary applications.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">Cross-Disciplinary Applications of the 3D Digital Twin</PHeading>
-              <div className="flex flex-col gap-fluid-md mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">Cross-Disciplinary Applications of the 3D Digital Twin</PHeading>
+              <div className="flex flex-col gap-fluid-md mb-fluid-md">
                 {[
                   { n: '1', title: 'Route Familiarization and Hazard Scouting', desc: 'Utilizing the Explore Mode, expedition leaders and high-altitude guides can virtually scout the complex geometry of the Khumbu region. Teams can analyze slope gradients, identify potential avalanche paths, and plot safer alternative routes before committing valuable resources to risky terrain.' },
                   { n: '2', title: 'Ground-Level Visibility Analysis', desc: 'The Jump In Mode lets operators drop down to a human eye-level perspective to evaluate real-time lines of sight from specific camp coordinates, determining if localized topography blocks crucial radio or telemetry paths essential for expedition coordination.' },

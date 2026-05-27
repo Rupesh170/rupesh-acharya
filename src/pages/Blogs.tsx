@@ -19,42 +19,6 @@ const posts = [
     date: 'February 22, 2024',
     image: '/gallery-comparison.webp',
   },
-  {
-    id: 3,
-    title: 'Drone Survey Ground Control: How Many GCPs Do You Actually Need?',
-    summary: 'An evidence-based analysis of GCP quantity vs. accuracy trade-offs in UAV photogrammetry, with practical guidance for different project types and area sizes.',
-    category: 'Mapping Accuracy',
-    readTime: '10 min read',
-    date: 'January 18, 2024',
-    image: '/project-terrain.webp',
-  },
-  {
-    id: 4,
-    title: 'Automating Survey-to-CAD with Python and Civil 3D',
-    summary: 'How to build a Python pipeline that ingests total station job files and produces annotated AutoCAD drawings without manual drafting — covering the key libraries and common pitfalls.',
-    category: 'CAD/GIS Integration',
-    readTime: '15 min read',
-    date: 'December 9, 2023',
-    image: '/project-cad.webp',
-  },
-  {
-    id: 5,
-    title: 'The Field-to-Digital Pipeline: What No One Tells You',
-    summary: 'Honest lessons from 50+ geospatial projects: the gaps between theoretical workflows and field reality, and how to build pipelines that survive contact with actual data.',
-    category: 'Field Pipelines',
-    readTime: '9 min read',
-    date: 'November 3, 2023',
-    image: '/about-engineer.webp',
-  },
-  {
-    id: 6,
-    title: 'Point Cloud Visualization for the Web: Potree vs. Cesium',
-    summary: 'A practical comparison of the two dominant open-source tools for streaming massive classified point clouds to web browsers, including performance benchmarks and integration complexity.',
-    category: '3D Data Processing',
-    readTime: '11 min read',
-    date: 'October 15, 2023',
-    image: '/gallery-lidar.webp',
-  },
 ];
 
 const categories = ['All', 'Workflows', 'Digital Twins', 'Mapping Accuracy', 'CAD/GIS Integration', 'Field Pipelines', '3D Data Processing'];
@@ -101,6 +65,7 @@ export default function Blogs() {
       </section>
 
       {/* Featured Post */}
+      {/*
       <section className="py-fluid-2xl bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
           <article
@@ -136,8 +101,10 @@ export default function Blogs() {
           </article>
         </div>
       </section>
+      */}
 
       {/* Posts Grid */}
+      {/* 
       <section className="pb-fluid-2xl bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-fluid-lg">
@@ -184,6 +151,7 @@ export default function Blogs() {
           </div>
         </div>
       </section>
+      */}
     </div>
   );
 }

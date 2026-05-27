@@ -108,20 +108,20 @@ export default function ProjectDetail1() {
       </section>
 
       {/* Content */}
-      <section className="py-fluid-2xl bg-canvas">
+      <section className="py-fluid-lg bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-lg">
             <div className="lg:col-span-2">
-              <PHeading size="x-large" tag="h2" className="mb-fluid-md">Project Overview</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="x-large" tag="h1" className="mb-fluid-sm">Project Overview</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 This project showcases the successful integration of high-resolution LiDAR (Light Detection and Ranging) elevation datasets and GIS spatial data into Unreal Engine to construct a true-to-life digital twin of a section of Yosemite National Park. By pairing absolute real-world topography with advanced material texturing and Procedural Content Generation (PCG) framework for dense, native vegetation distribution, this workflow moves spatial data past static 2D boundaries into a highly responsive, interactive 3D environment.
               </PText>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 The convergence of authoritative geographical surveys and real-time game engine physics opens up massive possibilities, fundamentally transforming workflows in game development and several immersive engineering disciplines.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">Key Cross-Disciplinary Applications</PHeading>
-              <div className="flex flex-col gap-fluid-md mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">Key Cross-Disciplinary Applications</PHeading>
+              <div className="flex flex-col gap-fluid-md mb-fluid-md">
                 {[
                   { n: '1', title: 'Game Development & Level Design', desc: 'Traditionally, environment artists spend hundreds of hours manually sculpting mountain ranges, valleys, and cliff faces. With real-world LiDAR data, level designers can skip the manual block-out phase by importing exact, 1:1 scale real-world locations. This ensures instant believable macro-topography, allowing teams to focus entirely on gameplay loops, pacing, and asset optimization. Using real-world LiDAR data captures true erosion patterns, scree slopes, and natural drainage paths. When paired with Unreal Engine\'s PCG system, foliage can be procedurally spawned based on real spatial attributes—slope angle, moisture accumulation layers, and elevation—creating incredibly organic, naturally distributed ecosystems that elevate player immersion.' },
                   { n: '2', title: 'Virtual Production, VFX, and Cinematic Environments', desc: 'The film and television industry increasingly relies on real-time rendering environments (such as LED volumes) to shoot scenes without traveling to remote, logistically challenging locations. For productions set in iconic locations like Yosemite, this workflow provides a highly accurate, game-ready virtual asset. Directors can control the sun angle, alter weather systems dynamically, and choreograph camera flyovers with absolute confidence that the scale, horizon line, and rock textures perfectly match reality.' },
@@ -157,3 +157,8 @@ export default function ProjectDetail1() {
     </div>
   );
 }
+
+
+
+
+

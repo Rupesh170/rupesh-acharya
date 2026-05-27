@@ -74,20 +74,20 @@ export default function ProjectDetail5() {
       </section>
 
       {/* Content */}
-      <section className="py-fluid-2xl bg-canvas">
+      <section className="py-fluid-lg bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-lg">
             <div className="lg:col-span-2">
-              <PHeading size="x-large" tag="h2" className="mb-fluid-md">Project Overview</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="x-large" tag="h1" className="mb-fluid-sm">Project Overview</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 This project features a highly detailed, solid-geometry 3D model of the San Francisco Bay Area cityscape, optimized specifically for additive manufacturing (3D printing). The model accurately captures the region's unique urban density, showing the progression from low-rise residential grids to the iconic, soaring skyscrapers of the Financial District, all bounded by the precise coastal topography of the bay.
               </PText>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 By converting complex, non-manifold geospatial and architectural data into a unified, watertight mesh, 3D Print City Modeling transitions digital urban twins into the physical world. This cross-disciplinary workflow provides immense value across several professional fields.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">Key Applications</PHeading>
-              <div className="flex flex-col gap-fluid-md mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">Key Applications</PHeading>
+              <div className="flex flex-col gap-fluid-md mb-fluid-md">
                 {[
                   { n: '1', title: 'Urban Planning, Zoning, and Public Consultation', desc: 'Municipalities and urban planners have long relied on physical models to conceptualize city growth. Tactile 3D-printed cityscapes revolutionize this process by allowing stakeholders to visualize proposed developments, enabling planners to print modular "plug-and-play" architectural pieces of new skyscrapers or transit hubs and physically insert them into the existing city grid to analyze spatial harmony and neighborhood fit. Physical models also streamline public approval by democratizing complex blueprinted data, enabling local citizens, government officials, and non-technical investors to instantly grasp the physical scale, height limitations, and community impact of a project during public hearings.' },
                   { n: '2', title: 'Real Estate Development and Architectural Marketing', desc: 'In high-stakes real estate markets like San Francisco, physical context is everything. Developers leverage 3D-printed city models as high-end marketing and design tools by conducting contextual sightline studies to showcase premium penthouse views or commercial floor visibility to prospective tenants through physically demonstrating how surrounding high-rises interact with the site. A tangible, precision-scaled model of an entire district functions as an impressive center-piece for investor galleries, immediately conveying the scale and prestige of an acquisition portfolio.' },
@@ -123,3 +123,8 @@ export default function ProjectDetail5() {
     </div>
   );
 }
+
+
+
+
+

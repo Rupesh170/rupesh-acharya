@@ -105,40 +105,40 @@ export default function ProjectDetail1() {
       </section>
 
       {/* Content */}
-      <section className="py-fluid-2xl bg-canvas">
+      <section className="py-fluid-lg bg-canvas">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-fluid-lg">
             <div className="lg:col-span-2">
-              <PHeading size="x-large" tag="h1" className="mb-fluid-md">3D Terrain Simulation of Glen Canyon</PHeading>
-              <PText size="medium" theme="dark" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="x-large" tag="h1" className="mb-fluid-sm">3D Terrain Simulation of Glen Canyon</PHeading>
+              <PText size="medium" theme="dark" color="contrast-medium" tag="p" className="mb-fluid-md">
                 Realistic, high resolution 3D Terrain flyover simulation of Glen Canyon Area in Unreal Engine
               </PText>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
               While this high-resolution 3D aerial flyover of the Glen Canyon region provides a stunning visual representation of the area’s rugged geology and the winding Colorado River, its true value lies beneath the surface. This simulation demonstrates a highly accurate, data-driven digital twin of complex topography, showcasing a workflow that is critical for modern engineering, environmental management, and infrastructure development.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">Core Applications</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">Core Applications</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
                 Simulations of this fidelity are foundational for various engineering disciplines that interact with large-scale natural environments
               </PText>
 
-               <PHeading size="large" tag="h2" className="mb-fluid-md">Civil Infrastructure & Site Planning</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+               <PHeading size="large" tag="h2" className="mb-fluid-sm">Civil Infrastructure & Site Planning</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
               For projects like highway routing, bridge construction, or dam monitoring (highly relevant to the Glen Canyon area), 3D terrain models allow engineers to conduct virtual site assessments. They can calculate cut-and-fill volumes, determine optimal grading, and assess the structural viability of slopes before physical work begins.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">Hydrological Modeling & Flood Risk</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">Hydrological Modeling & Flood Risk</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
               The detailed elevation data captures natural drainage basins and the precise path of the river. Hydrologists use these models to simulate water flow, predict flood inundation zones, and manage water resources. By altering water levels within the simulation, engineers can foresee the impacts of drought or heavy rainfall on the surrounding terrain.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">Geotechnical & Hazard Assessment</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">Geotechnical & Hazard Assessment</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
               The prominent vertical striations and steep cliff faces visible in the render represent potential areas of geological instability. Geotechnical engineers use these high-resolution meshes to identify fracture zones, model rockfall trajectories, and predict landslide risks, allowing for preemptive safety measures.
               </PText>
 
-              <PHeading size="large" tag="h2" className="mb-fluid-md">Environmental Impact Studies</PHeading>
-              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-lg">
+              <PHeading size="large" tag="h2" className="mb-fluid-sm">Environmental Impact Studies</PHeading>
+              <PText size="medium" color="contrast-medium" tag="p" className="mb-fluid-md">
               Before any development occurs, engineers and scientists use terrain simulations to visualize the ecological footprint. This includes analyzing how a proposed structure might alter local wind patterns, sunlight distribution, or natural wildlife corridors.
               </PText>
 
@@ -158,3 +158,8 @@ export default function ProjectDetail1() {
     </div>
   );
 }
+
+
+
+
+
