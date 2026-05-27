@@ -1,6 +1,6 @@
-import { PDisplay, PHeading, PText, PDivider, PTag } from '@porsche-design-system/components-react';
+import { PDisplay, PText} from '@porsche-design-system/components-react';
 
-const posts = [
+{/* const posts = [
   {
     id: 1,
     title: 'From LiDAR to CityGML: A Step-by-Step Workflow',
@@ -19,7 +19,7 @@ const posts = [
     date: 'February 22, 2024',
     image: '/gallery-comparison.webp',
   },
-];
+]; */}
 
 const categories = ['All', 'Workflows', 'Digital Twins', 'Mapping Accuracy', 'CAD/GIS Integration', 'Field Pipelines', '3D Data Processing'];
 

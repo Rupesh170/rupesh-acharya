@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { PDisplay, PHeading, PText, PIcon, PDivider } from '@porsche-design-system/components-react';
+import { PDisplay, PHeading, PText, PIcon,} from '@porsche-design-system/components-react';
 
 const projectTypes = [
   '2D Mapping',
