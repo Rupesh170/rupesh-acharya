@@ -63,7 +63,7 @@ export default function About() {
             </div>
             <div className="rounded-lg overflow-hidden" style={{ boxShadow: '0px 8px 40px rgba(0,0,0,0.16)' }}>
               <img
-                src="/unnamed.jpg"
+                src="https://res.cloudinary.com/drndctvgz/image/upload/v1779965747/unnamed_jjpaf0.jpg"
                 alt="Geospatial engineer in the field"
                 className="w-full h-full object-cover"
                 style={{ maxHeight: 480 }}

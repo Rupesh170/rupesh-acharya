@@ -10,9 +10,9 @@ import {
 } from '@porsche-design-system/components-react';
 
 const videoPosters = [
-  '/Photo_1.png',
-  '/Photo_2.png',
-  '/Photo_3.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965750/Photo_1_xb2zkv.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965748/Photo_2_kn0bhf.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965748/Photo_3_recsht.png',
 ];
 
 const featuredProjects = [
@@ -20,21 +20,21 @@ const featuredProjects = [
     id: '3d-digital-twin',
     title: '3D Digital Twin Terrain App',
     description: 'Mt Everest as Digital Twin Terrain.',
-    image: 'Photo_1.png',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965750/Photo_1_xb2zkv.png',
     tag: 'Digital Twin',
   },
   {
     id: '3d-terrain-modeling',
     title: '3D Terrain Modeling',
     description: 'High-resolution 3D terrain flyover simulation of Glen Canyon area with accurate digital elevation data and realistic textures in Unreal Engine.',
-    image: '3D_1_1.PNG',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779966591/3D_1_1_fasiie.png',
     tag: '3D Modeling',
   },
   {
     id: 'bim-modeling-geospatial',
     title: 'BIM Modeling in Geospatial Context',
     description: 'Comprehensive BIM modeling and geolocation in a 3D City model - bridging detailed architectural design with macro-scale geographic environments.',
-    image: '/BIM_1_1.png',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965779/BIM_1_1_k03bu2.png',
     tag: 'BIM',
   }
 ];
@@ -47,8 +47,8 @@ const services = [
 ];
 
 const videos = [
-  { id: 0, title: 'Geospatial 3D Modeling Sample 1', src: '/3D_1.mp4', poster: '/3D_1_1.PNG' },
-  { id: 1, title: 'Geospatial 3D Modeling Sample 2', src: '/3D_2.mp4', poster: '/3D_4_1.PNG' },
+  { id: 0, title: 'Geospatial 3D Modeling Sample 1', src: 'https://res.cloudinary.com/drndctvgz/video/upload/v1779965142/3D_1_mtu2gw.mp4', poster: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779966591/3D_1_1_fasiie.png' },
+  { id: 1, title: 'Geospatial 3D Modeling Sample 2', src: 'https://res.cloudinary.com/drndctvgz/video/upload/v1779965112/3D_2_ipkmeu.mp4', poster: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965755/3D_4_1_ljt110.png' },
 ];
 
 const stats = [

@@ -4,7 +4,7 @@ import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system
 
 
 const backgroundMedia = [
-  { type: 'video', src: '/3D_2.mp4' },
+  { type: 'video', src: 'https://res.cloudinary.com/drndctvgz/video/upload/v1779965112/3D_2_ipkmeu.mp4' },
   { type: 'image', src: '/3D_4_1.PNG' },
   { type: 'image', src: '/3D_4_2.png' },
   { type: 'image', src: '/3D_4_3.PNG' },

@@ -3,7 +3,7 @@ import { useEffect, useState, useRef} from 'react';
 import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system/components-react';
 
 const backgroundMedia = [
-  { type: 'video', src: '/3D_1.mp4' },
+  { type: 'video', src: 'https://res.cloudinary.com/drndctvgz/video/upload/v1779965142/3D_1_mtu2gw.mp4' },
   { type: 'image', src: '/3D_1_1.PNG' },
   { type: 'image', src: '/3D_1_2.PNG' },
 

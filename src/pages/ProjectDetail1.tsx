@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from 'react';
 import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system/components-react';
 
 const backgroundMedia = [
-  { type: 'video', src: '/Mt_Everest.mp4' },
+  { type: 'video', src: 'https://res.cloudinary.com/drndctvgz/video/upload/v1779965127/Mt_Everest_oumh2p.mp4' },
   { type: 'image', src: '/Photo_1.png' },
   { type: 'image', src: '/Photo_2.png' },
   { type: 'image', src: '/Photo_3.png' },
