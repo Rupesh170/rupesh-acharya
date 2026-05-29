@@ -8,7 +8,7 @@ const projects = [
     title: '3D Digital Twin Terrain App',
     summary: 'Mt Everest as Digital Twin Terrain',
     category: 'Digital Twin',
-    image: 'Photo_1.png',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965750/Photo_1_xb2zkv.png',
     tags: ['Digital Twin'],
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     title: '3D Terrain Simulation of Glen Canyon',
     summary: 'High-resolution 3D terrain flyover simulation of Glen Canyon area with accurate digital elevation data and realistic textures in Unreal Engine.',
     category: '3D Modeling',
-    image: '3D_1_1.PNG',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779966591/3D_1_1_fasiie.png',
     tags: ['3D Modeling'],
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     title: '3D Terrain Modeling of Mount Annapurna Range',
     summary: 'High-fidelity textured 3D terrain model of Mount Annapurna Range featuring Machapuchare with applications in hazard assessment, hydropower engineering, and trekking safety.',
     category: '3D Modeling',
-    image: '/3D_2_1.jpg',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965802/3D_2_1_jwty5l.jpg',
     tags: ['3D Modeling'],
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     title: '3D Print City Modeling',
     summary: '3D Print ready cityscape modeling of San Francisco Bay Area optimized for additive manufacturing and urban planning applications.',
     category: '3D Modeling',
-    image: '/3D_3_1.png',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965780/3D_3_1_ozktzs.png',
     tags: ['3D Modeling'],
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     title: 'BIM Modeling in Geospatial Context',
     summary: 'Comprehensive BIM modeling and geolocation in a 3D City model - bridging detailed architectural design with macro-scale geographic environments.',
     category: 'BIM',
-    image: '/BIM_1_1.png',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965779/BIM_1_1_k03bu2.png',
     tags: ['BIM'],
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     title: 'Roadway Design Presentation in a Real Life Location',
     summary: 'Highway interchange engineering concepts fused with real-time geographic data for immersive 3D presentation, transforming BIM models into infrastructure digital twins.',
     category: 'BIM',
-    image: '/BIM_2_1.png',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965809/BIM_2_1_vvb3qb.png',
     tags: ['BIM'],
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     title: 'BIM + GIS Modeling',
     summary: 'Townhall development concepts utilizing BIM and GIS for contextual modeling - embedding architectural precision within real-world geographic environments.',
     category: 'BIM',
-    image: '/BIM_3_1.png',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965798/BIM_3_1_sdggv8.png',
     tags: ['BIM'],
   },
   {
@@ -64,7 +64,7 @@ const projects = [
     title: 'Architectural BIM Rendering',
     summary: 'High-fidelity 3D modeling and rendering of a modern commercial warehouse facility with comprehensive design layout, structural steel framing, and data-driven BIM intelligence.',
     category: 'BIM',
-    image: '/BIM_4_1.png',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779966590/BIM_4_1_ozeak6.png',
     tags: ['BIM'],
   },
   {
@@ -72,7 +72,7 @@ const projects = [
     title: '3D GIS Modeling',
     summary: 'City-scale 3D GIS model showcase featuring a comprehensive 3D city model of Pokhara City for sustainable planning, urban development, and infrastructure analysis.',
     category: 'GIS',
-    image: '/GIS_1_1.jpg',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965807/GIS_1_1_cswwgr.jpg',
     tags: ['GIS'],
   },
   {
@@ -80,7 +80,7 @@ const projects = [
     title: '3D Landscape Design of Yosemite National Park',
     summary: 'LiDAR-based terrain modeling and procedural forest generation showcasing real-world topography integration with Unreal Engine for game development, VFX, and conservation simulation.',
     category: '3D Modeling',
-    image: '/3D_4_1.PNG',
+    image: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965755/3D_4_1_ljt110.png',
     tags: ['3D Modeling'],
   },
 ];
