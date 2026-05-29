@@ -6,8 +6,8 @@ import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system
 
 const backgroundMedia = [
   { type: 'video', src: 'https://res.cloudinary.com/drndctvgz/video/upload/v1779965109/BIM_2_qkh7w3.mp4' },
-  { type: 'image', src: '/BIM_2_1.png' },
-  { type: 'image', src: '/BIM_2_2.png' },
+  { type: 'image', src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965809/BIM_2_1_vvb3qb.png' },
+  { type: 'image', src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965805/BIM_2_2_dqzsw9.png' },
 ];
 
 export default function ProjectDetail1() {

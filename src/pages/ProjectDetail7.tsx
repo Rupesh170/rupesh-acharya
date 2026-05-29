@@ -3,14 +3,14 @@ import { useEffect, useState } from 'react';
 import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system/components-react';
 
 const backgroundImages = [
-  '/BIM_1_1.png',
-  '/BIM_1_2.png',
-  '/BIM_1_3.png',
-  '/BIM_1_4.png',
-  '/BIM_1_5.png',
-  '/BIM_1_6.png',
-  '/BIM_1_7.png',
-  '/BIM_1_8.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965779/BIM_1_1_k03bu2.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965790/BIM_1_2_dvnnhw.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965791/BIM_1_3_uhmw4l.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965780/BIM_1_4_sg97et.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965770/BIM_1_5_rek0d3.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965769/BIM_1_6_uwtxrz.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965765/BIM_1_7_rrdkc5.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965765/BIM_1_8_vhct0w.png',
 ];
 
 export default function ProjectDetail7() {

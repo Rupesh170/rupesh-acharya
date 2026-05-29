@@ -5,11 +5,11 @@ import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system
 
 const backgroundMedia = [
   { type: 'video', src: 'https://res.cloudinary.com/drndctvgz/video/upload/v1779965112/3D_2_ipkmeu.mp4' },
-  { type: 'image', src: '/3D_4_1.PNG' },
-  { type: 'image', src: '/3D_4_2.png' },
-  { type: 'image', src: '/3D_4_3.PNG' },
-  { type: 'image', src: '/3D_4_4.PNG' },
-  { type: 'image', src: '/3D_4_5.gif' },
+  { type: 'image', src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965755/3D_4_1_ljt110.png' },
+  { type: 'image', src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965762/3D_4_2_gx329y.png' },
+  { type: 'image', src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965756/3D_4_3_zewcq8.png' },
+  { type: 'image', src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965757/3D_4_4_ijwtqd.png' },
+  { type: 'image', src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965759/3D_4_5_eqkmcw.gif' },
 ];
 
 export default function ProjectDetail1() {

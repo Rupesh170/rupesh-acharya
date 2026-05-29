@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system/components-react';
 
 const backgroundImages = [
-  '/BIM_4_1.png',
-  '/BIM_4_2.png',
-  '/BIM_4_3.png',
-  '/BIM_4_4.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779966590/BIM_4_1_ozeak6.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965785/BIM_4_2_tcswry.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779966589/BIM_4_3_roawko.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779966591/BIM_4_4_jev0kc.png',
 ];
 
 export default function ProjectDetail10() {

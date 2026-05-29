@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react';
 import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system/components-react';
 
 const backgroundImages = [
-  '/3D_3_1.png',
-  '/3D_3_2.png',
-  '/3D_3_3.png',
-  '/3D_3_4.png',
-  '/3D_3_5.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965780/3D_3_1_ozktzs.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965779/3D_3_2_mpeeu1.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965776/3D_3_3_lmasr6.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965776/3D_3_4_elgejh.png',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965770/3D_3_5_ln94tu.png',
 ];
 
 export default function ProjectDetail5() {

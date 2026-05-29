@@ -4,9 +4,9 @@ import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system
 
 const backgroundMedia = [
   { type: 'video', src: 'https://res.cloudinary.com/drndctvgz/video/upload/v1779965127/Mt_Everest_oumh2p.mp4' },
-  { type: 'image', src: '/Photo_1.png' },
-  { type: 'image', src: '/Photo_2.png' },
-  { type: 'image', src: '/Photo_3.png' },
+  { type: 'image', src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965750/Photo_1_xb2zkv.png' },
+  { type: 'image', src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965748/Photo_2_kn0bhf.png' },
+  { type: 'image', src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965748/Photo_3_recsht.png' },
 ];
 
 export default function ProjectDetail1() {

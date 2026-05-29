@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system/components-react';
 
 const backgroundImages = [
-  '/3D_2_1.jpg',
-  '/3D_2_2.png'
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965802/3D_2_1_jwty5l.jpg',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965802/3D_2_2_vwwgeh.png'
 ];
 
 export default function ProjectDetail4() {

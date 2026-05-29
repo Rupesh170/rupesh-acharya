@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react';
 import { PButton, PDisplay, PHeading, PText, PTag } from '@porsche-design-system/components-react';
 
 const backgroundImages = [
-  '/GIS_1_1.jpg',
-  '/GIS_1_2.jpg',
-  '/GIS_1_3.jpg',
-  '/GIS_1_4.jpg',
-  '/GIS_1_5.jpg',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965807/GIS_1_1_cswwgr.jpg',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965806/GIS_1_2_tj0ie8.jpg',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965804/GIS_1_3_eufcfa.jpg',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965803/GIS_1_4_jcvrsn.jpg',
+  'https://res.cloudinary.com/drndctvgz/image/upload/v1779965782/GIS_1_5_bdu75v.jpg',
 ];
 
 export default function ProjectDetail11() {
