@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { PDisplay, PText, PIcon } from '@porsche-design-system/components-react';
 
 const galleryItems = [
-  { id: 1, src: '/Gallery4.png', title: 'Georeferenced BIM', category: 'Digital Twin', size: 'large' },
-  { id: 2, src: '/Gallery2.PNG', title: '3D Print Terrain Model', category: '3D Model', size: 'small' },
+  { id: 1, src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779966593/Gallery4_kkqeww.png', title: 'Georeferenced BIM', category: 'Digital Twin', size: 'large' },
+  { id: 2, src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965772/Gallery2_rduk7v.png', title: '3D Print Terrain Model', category: '3D Model', size: 'small' },
   { id: 3, src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779966589/Gallery3_hjuqlv.png', title: '3dsMax + Twinmotion', category: '3D Model', size: 'small' },
-  { id: 4, src: '/Gallery5.png', title: 'Digital Twin Visualization', category: 'Digital Twin', size: 'large' },
-  { id: 5, src: '/3D_4_1.PNG', title: 'LiDAR to 3D Model', category: 'LiDAR', size: 'large' },
-  { id: 6, src: '/Gallery1 (5).PNG', title: 'LiDAR to DTM', category: 'LiDAR', size: 'small' },
-  { id: 7, src: '/Gallery1.JPG', title: '3D City Model', category: '3D Model', size: 'small' },
-  { id: 8, src: '/3D_4_5.gif', title: 'Real Life Model and Unreal Engine Model ', category: 'LiDAR', size: 'large' },
+  { id: 4, src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779966593/Gallery5_itzlvp.png', title: 'Digital Twin Visualization', category: 'Digital Twin', size: 'large' },
+  { id: 5, src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965755/3D_4_1_ljt110.png', title: 'LiDAR to 3D Model', category: 'LiDAR', size: 'large' },
+  { id: 6, src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965749/Gallery1_5_gvhls0.png', title: 'LiDAR to DTM', category: 'LiDAR', size: 'small' },
+  { id: 7, src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965799/Gallery1_itiwpy.jpg', title: '3D City Model', category: '3D Model', size: 'small' },
+  { id: 8, src: 'https://res.cloudinary.com/drndctvgz/image/upload/v1779965759/3D_4_5_eqkmcw.gif', title: 'Real Life Model and Unreal Engine Model ', category: 'LiDAR', size: 'large' },
 ];
 
 const filters = ['All', 'Digital Twin', '3D Model', 'CAD', 'LiDAR', 'Mapping'];
