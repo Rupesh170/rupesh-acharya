@@ -44,13 +44,13 @@ export default function Footer() {
           <div>
             <PText weight="semi-bold" size="small" tag="p" className="mb-fluid-sm">Connect</PText>
             <div className="flex flex-col gap-static-sm">
-              <a
-                href="mailto:rupeshacharya277@gmail.com"
+              <Link
+                to="/contact"
                 className="flex items-center gap-static-xs text-sm text-contrast-medium hover:text-primary no-underline transition-colors"
               >
                 <PIcon name="email" size="small" aria-hidden="true" />
-                rupeshacharya277@gmail.com
-              </a>
+                Contact Form
+              </Link>
               <a
                 href="https://www.linkedin.com/in/rupesh-acharya11/"
                 target="_blank"
@@ -66,15 +66,8 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-static-xs text-sm text-contrast-medium hover:text-primary no-underline transition-colors"
               >
-                <PIcon size="small" aria-hidden="true" />
+                
                 Fiverr - Freelance Services
-              </a>
-              <a
-                href="tel:+9779816637599"
-                className="flex items-center gap-static-xs text-sm text-contrast-medium hover:text-primary no-underline transition-colors"
-              >
-                <PIcon name="phone" size="small" aria-hidden="true" />
-                +977 981-6637599
               </a>
             </div>
           </div>
