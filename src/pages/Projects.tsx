@@ -108,7 +108,7 @@ export default function Projects() {
           </PDisplay>
           <PText size="medium" theme="dark" color="contrast-medium" tag="p" className="mt-fluid-md max-w-[600px]">
             A collection of geospatial engineering work spanning digital twins, terrain modeling,
-            mapping campaigns, and automated CAD pipelines.
+            GIS, BIM workflows.
           </PText>
         </div>
       </section>

@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { PDisplay, PHeading, PText, PIcon,} from '@porsche-design-system/components-react';
+import emailjs from '@emailjs/browser';
+import { EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID } from '../config/emailjs.ts';
 
 const projectTypes = [
   '2D Mapping',
@@ -23,10 +25,53 @@ export default function Contact() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    
+    setLoading(true);
+    setError('');
+
+    try {
+      // Format the message with all form fields
+      const formattedMessage = `Full Name *
+${formData.name}
+
+Email Address *
+${formData.email}
+
+Project Type *
+${formData.projectType}
+
+Budget Range (optional)
+${formData.budget || 'Prefer not to say'}
+
+Timeline (optional)
+${formData.timeline || 'Flexible'}
+
+Message *
+${formData.message}`;
+
+      await emailjs.send(
+        EMAIL_SERVICE_ID,
+        EMAIL_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formattedMessage,
+          to_email: 'rupeshacharya227@gmail.com',
+        }
+      );
+      setSubmitted(true);
+      setFormData({ name: '', email: '', projectType: '', budget: '', timeline: '', message: '' });
+    } catch (err: any) {
+      console.error('Email error:', err);
+      setError(`Error: ${err.text || err.message || 'Failed to send message. Please try again or contact me directly.'}`);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -233,13 +278,25 @@ export default function Contact() {
                       />
                     </div>
 
+                    {error && (
+                      <div
+                        className="p-static-md rounded border"
+                        style={{ borderColor: '#E55142', backgroundColor: '#FEF5F4' }}
+                      >
+                        <PText size="small" color="contrast-medium" tag="p" style={{ color: '#E55142' }}>
+                          {error}
+                        </PText>
+                      </div>
+                    )}
+
                     <button
                       type="submit"
-                      className="flex items-center justify-center gap-static-sm px-fluid-md py-static-md rounded font-medium text-white transition-all"
-                      style={{ backgroundColor: '#d5001c', border: 'none', cursor: 'pointer', fontSize: '0.875rem' }}
+                      disabled={loading}
+                      className="flex items-center justify-center gap-static-sm px-fluid-md py-static-md rounded font-medium text-white transition-all disabled:opacity-60"
+                      style={{ backgroundColor: '#d5001c', border: 'none', cursor: loading ? 'not-allowed' : 'pointer', fontSize: '0.875rem' }}
                     >
                       <PIcon name="email" size="small" theme="dark" aria-hidden="true" />
-                      Send Message
+                      {loading ? 'Sending...' : 'Send Message'}
                     </button>
 
                   
@@ -250,9 +307,9 @@ export default function Contact() {
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center justify-center gap-static-sm px-fluid-md py-static-md rounded font-medium text-white transition-all"
-  style={{ backgroundColor: '#1ea200', border: 'none', cursor: 'pointer', fontSize: '0.875rem', textDecoration: 'none' }} // Removed display: 'block'
+  style={{ backgroundColor: '#1ea200', border: 'none', cursor: 'pointer', fontSize: '0.875rem', textDecoration: 'none' }}
 >
-  <PIcon size="small" theme="dark" aria-hidden="true" />
+  <PIcon name="external-link" size="small" theme="dark" aria-hidden="true" />
   <span>Send message in Fiverr</span>
 </a>
                 </>
