@@ -104,8 +104,6 @@ ${formData.message}`;
 
               <div className="flex flex-col gap-fluid-lg mb-fluid-xl">
                 {[
-                  { icon: 'email', label: 'Email', value: 'rupeshacharya277@gmail.com', href: 'mailto:rupeshacharya277@gmail.com' },
-                  { icon: 'phone', label: 'Phone', value: '+977 981-6637599', href: 'tel:+9779816637599' },
                   { icon: 'logo-linkedin', label: 'LinkedIn', value: 'linkedin.com/in/rupesh-acharya11/', href: 'https://www.linkedin.com/in/rupesh-acharya11/' },
                   { icon: 'geo-localization', label: 'Location', value: 'Available Worldwide · Remote & On-site', href: null },
                   { icon: 'briefcase', label: 'Fiverr', value: 'Available for freelance projects', href: 'https://www.fiverr.com/s/3879l7m' },
@@ -309,7 +307,7 @@ ${formData.message}`;
   className="flex items-center justify-center gap-static-sm px-fluid-md py-static-md rounded font-medium text-white transition-all"
   style={{ backgroundColor: '#1ea200', border: 'none', cursor: 'pointer', fontSize: '0.875rem', textDecoration: 'none' }}
 >
-  <PIcon name="external-link" size="small" theme="dark" aria-hidden="true" />
+
   <span>Send message in Fiverr</span>
 </a>
                 </>
