@@ -154,7 +154,7 @@ export default function Home() {
       {/* STATS BAND */}
       <section style={{ backgroundColor: '#d5001c' }} className="py-fluid-lg">
         <div className="max-w-[1440px] mx-auto px-fluid-md">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-fluid-lg">
+          <div className="flex flex-wrap justify-center gap-fluid-lg">
             {stats.map(({ value, label }) => (
               <div key={label} className="text-center">
                 <div className="text-4xl font-bold text-white mb-1">{value}</div>
