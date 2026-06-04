@@ -21,7 +21,7 @@ import { PDisplay, PText} from '@porsche-design-system/components-react';
   },
 ]; */}
 
-const categories = ['All', 'Workflows', 'Digital Twins', 'Mapping Accuracy', 'CAD/GIS Integration', 'Field Pipelines', '3D Data Processing'];
+const categories = ['All'];
 
 export default function Blogs() {
   return (
